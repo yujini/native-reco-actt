@@ -44,6 +44,42 @@ To learn more about developing your project with Expo, look at the following res
 
 ## Join the community
 
+
+
+
+
+
+
+# 1. iOS에서 앱 설치 (Expo Go)
+
+# 2. node 설치 (v22.22.2)
+node --version
+v22.22.2
+
+# 2. 프로젝트 다운로드
+ (https://github.com/yujini/native-reco-actt.git)
+
+# 3. Expo CLI 설치 (없으면)
+npm install -g expo-cli
+
+# 4. 의존성 설치
+npx expo install react-native-webview
+npx expo install expo-file-system expo-media-library expo-sharing
+
+# 5. ★핫스팟★ 연결
+폰 → 설정 → 개인용 핫스팟 ON
+PC → 와이파이 → 폰 핫스팟에 연결
+
+# 6. PC에서 ipconfig로 ip주소 확인
+무선 LAN 어댑터 Wi-Fi:
+   IPv4 주소 . . . : 192.168.x.x   ← 이게 뜨면 정상
+
+# 7. 실행
+set REACT_NATIVE_PACKAGER_HOSTNAME=172.20.10.11 && npx expo start --lan
+
+# 8. 아이폰 카메라에서 CMD의 QR코드 인식하여 앱 접속
+
+
 Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
